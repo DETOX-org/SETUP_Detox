@@ -3,6 +3,8 @@
 ### Instant AI-Powered Hackathon Team Collaboration Framework
 
 > **One command. Full team setup. AI manages everything.**
+>
+> 📥 **Want to use this?** Read the **[Import & Usage Guide →](IMPORT_GUIDE.md)**
 
 SETUP_Detox is a plug-and-play framework that sets up **AI-managed collaborative development** for hackathons and group projects. It handles task splitting, part assignment, isolated workspaces, GitHub sync, activity logging, and final merging — all through simple commands to your AI agent.
 
@@ -13,7 +15,7 @@ SETUP_Detox is a plug-and-play framework that sets up **AI-managed collaborative
 ### 1. Clone / Import
 ```bash
 # Clone this repo into your project
-git clone https://github.com/YOUR_USER/SETUP_Detox.git my-hackathon
+git clone https://github.com/Anshulpj12/SETUP_Detox.git my-hackathon
 cd my-hackathon
 ```
 
