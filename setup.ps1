@@ -1,8 +1,9 @@
 #!/usr/bin/env pwsh
 # ============================================================
-# SETUP_Detox — One-Command Hackathon Project Setup (Windows)
+# SETUP_Detox — One-Command Team Project Setup (Windows)
 # ============================================================
-# Usage: .\setup.ps1 [-ProjectName "MyHackathon"] [-GitRemote "https://github.com/..."]
+# Works for: Hackathons | Team Projects | Competitions | Collabs
+# Usage: .\setup.ps1 [-ProjectName "MyProject"] [-GitRemote "https://github.com/..."]
 # ============================================================
 
 param(
@@ -16,13 +17,13 @@ $Root = $PSScriptRoot
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "  🚀 SETUP_Detox — Hackathon Setup" -ForegroundColor Cyan
+Write-Host "  🚀 SETUP_Detox — Team Project Setup" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 # --- Step 1: Project Name ---
 if (-not $ProjectName) {
-    $ProjectName = Read-Host "📋 Enter your project/hackathon name"
+    $ProjectName = Read-Host "📋 Enter your project name (hackathon, team project, competition, etc.)"
 }
 Write-Host "✅ Project: $ProjectName" -ForegroundColor Green
 

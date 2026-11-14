@@ -2,11 +2,16 @@
 
 > ⚠️ **FILL THIS FILE BEFORE STARTING!**
 > The AI agent will read this file to understand your project and split it into parts.
+> Works for: Hackathons | Team Projects | Competitions | Open Source Collabs
 
 ---
 
 ## Project Name
-<!-- Write your project/hackathon name here -->
+<!-- Write your project name here -->
+
+
+## Project Type
+<!-- What kind of project is this? Examples: Hackathon, College Group Project, Competition, Sprint, Open Source -->
 
 
 ## Project Description
@@ -37,6 +42,10 @@
 
 ## Team Size
 <!-- How many people are working on this? -->
+
+
+## Deadline
+<!-- When is this due? Hackathon end time, submission date, sprint end, etc. -->
 
 
 ## Additional Notes

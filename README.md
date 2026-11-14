@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="#-quick-start-under-2-minutes"><img src="https://img.shields.io/badge/⚡_Setup_Time-Under_2_Min-brightgreen?style=flat-square" /></a>
-  <a href="#-the-problem-we-solve"><img src="https://img.shields.io/badge/🤝_Built_For-Hackathon_Teams-orange?style=flat-square" /></a>
+  <a href="#-the-problem-we-solve"><img src="https://img.shields.io/badge/🤝_Built_For-Teams_&_Competitions-orange?style=flat-square" /></a>
   <a href="#-how-does-the-ai-help"><img src="https://img.shields.io/badge/🤖_Powered_By-AI_Agents-blue?style=flat-square" /></a>
   <a href="IMPORT_GUIDE.md"><img src="https://img.shields.io/badge/📥_Full-Import_Guide-yellow?style=flat-square" /></a>
   <a href="#-license"><img src="https://img.shields.io/badge/📄_License-MIT-lightgrey?style=flat-square" /></a>
@@ -14,26 +14,38 @@
 
 ---
 
+## 🎯 Who Is This For?
+
+SETUP_Detox works for **any team building something together**:
+
+| 🏆 Hackathons | 🎓 College Group Projects | 💼 Team Competitions | 🚀 Open Source Collabs |
+|:-:|:-:|:-:|:-:|
+| Speed up your 24/48hr builds | Divide coursework fairly with proof of who did what | Organize coding contests & startup challenges | Onboard contributors instantly |
+
+> Whether you're 2 people or 20 — if your team writes code together, this is for you.
+
+---
+
 ## 😩 The Problem We Solve
 
-Ever been in a hackathon where...
+Ever been on a team where...
 
 | 😤 Without SETUP_Detox | 😎 With SETUP_Detox |
 |---|---|
 | "Who's working on what?" — asked 50 times | Every part is **claimed and tracked** in one file |
-| Merge conflicts at 3 AM before the deadline | Each member codes in **their own isolated folder** — zero conflicts |
+| Merge conflicts the night before the deadline | Each member codes in **their own isolated folder** — zero conflicts |
 | One person does 80% of the work | AI **splits the plan fairly** with clear scope for each part |
 | No one knows what's been done | **Every action is logged** — who did what, when, with what prompt |
 | 30 minutes wasted just setting up the repo | **One command** and the full structure is ready |
 | "I accidentally edited your file" | AI **blocks cross-part edits** — your folder is yours |
 | Merging 4 branches at the deadline is chaos | AI **verifies all parts**, then merges everything cleanly |
-| No project timeline for the judges | **Activity log** = automatic project timeline with timestamps |
+| No project timeline for judges or professors | **Activity log** = automatic project timeline with timestamps |
 
 ---
 
 ## 💡 So What Exactly Is This?
 
-**SETUP_Detox** is a **ready-to-use repository template** that you clone into your hackathon project. It comes with:
+**SETUP_Detox** is a **ready-to-use repository template** that you clone into any team project. It comes with:
 
 - 🤖 **AI Rules** — pre-written instructions (in `.gemini/rules/`) that automatically tell any AI coding agent how to manage your team's work
 - 📋 **Plan → Split → Claim → Build → Merge** — a complete collaboration workflow
@@ -51,23 +63,23 @@ Ever been in a hackathon where...
 
 ```bash
 # Clone into your project folder
-git clone https://github.com/Anshulpj12/SETUP_Detox.git my-hackathon
-cd my-hackathon
+git clone https://github.com/Anshulpj12/SETUP_Detox.git my-project
+cd my-project
 
 # Point to YOUR team's new GitHub repo
 git remote remove origin
-git remote add origin https://github.com/YOUR_TEAM/your-hackathon.git
+git remote add origin https://github.com/YOUR_TEAM/your-project.git
 ```
 
 ### Step 2 → Run Setup
 
 ```powershell
 # Windows
-.\setup.ps1 -ProjectName "My Awesome Hackathon"
+.\setup.ps1 -ProjectName "My Project Name"
 ```
 ```bash
 # Linux / Mac
-bash setup.sh --name "My Awesome Hackathon"
+bash setup.sh --name "My Project Name"
 ```
 
 ### Step 3 → Write Your Plan
@@ -269,10 +281,29 @@ Just say these to your AI agent in the chat:
 </tr>
 <tr>
 <td align="center">🤖<br/><b>AI Does The Boring Stuff</b><br/><sub>Splitting, tracking, logging — automated.</sub></td>
-<td align="center">📝<br/><b>Auto Documentation</b><br/><sub>Activity log = project timeline for judges.</sub></td>
+<td align="center">📝<br/><b>Auto Documentation</b><br/><sub>Activity log = project timeline for judges & professors.</sub></td>
 <td align="center">⭐<br/><b>Pro Repo Structure</b><br/><sub>Looks professional from commit #1.</sub></td>
 </tr>
 </table>
+
+---
+
+## 🎯 Use Cases
+
+### 🏆 Hackathons (24hr / 48hr / Week-long)
+Set up in 2 minutes, split the features, each member builds their part in parallel, merge at the end. The activity log doubles as your project timeline for judges.
+
+### 🎓 College & University Group Projects
+Fair task distribution with proof. The log shows exactly who did what — no more "one person did everything" situations. Professors can verify individual contributions.
+
+### 💼 Coding Competitions & Startup Challenges
+Fast parallel development with zero coordination overhead. Focus on building, not managing. Great for competitive programming teams dividing problem sets.
+
+### 🌐 Open Source & Community Projects
+New contributors clone the repo, see available parts, claim one, and start building. No onboarding meetings needed — the AI guides them through everything.
+
+### 🏢 Internal Team Sprints
+Spin up a project, split a sprint into parts, assign to team members. Activity log becomes your standup report.
 
 ---
 
@@ -280,8 +311,8 @@ Just say these to your AI agent in the chat:
 
 ### Option 1 — Clone & Go (Recommended)
 ```bash
-git clone https://github.com/Anshulpj12/SETUP_Detox.git my-hackathon
-cd my-hackathon
+git clone https://github.com/Anshulpj12/SETUP_Detox.git my-project
+cd my-project
 git remote remove origin
 git remote add origin https://github.com/YOUR_TEAM/your-repo.git
 .\setup.ps1 -ProjectName "YourProjectName"    # Windows
@@ -311,17 +342,17 @@ Click **"Fork"** on GitHub → clone your fork → run setup → push.
 
 ---
 
-## 💬 Example: A Real Hackathon Flow
+## 💬 Example: A Real Team Flow
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  HACKATHON STARTS — 9:00 AM                                     │
+│  PROJECT KICKOFF — Day 1                                        │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  9:00  Team Lead clones SETUP_Detox, runs setup.ps1             │
 │  9:05  Team Lead writes PLAN.md with full project details       │
 │  9:10  Team Lead tells AI: "split" → AI creates 4 parts        │
-│  9:12  Team Lead pushes to GitHub, shares repo link in chat     │
+│  9:12  Team Lead pushes to GitHub, shares repo link with team   │
 │                                                                  │
 │  9:15  Member A: "claim part 1" → Frontend UI (claimed ✅)      │
 │  9:15  Member B: "claim part 2" → Backend API (claimed ✅)      │
@@ -332,17 +363,18 @@ Click **"Fork"** on GitHub → clone your fork → run setup → push.
 │        Each member works in workspace/part-X/ only               │
 │        AI logs every prompt and file change                      │
 │                                                                  │
-│  2:00 PM  Member A: "done" → Part 1 complete ✅                 │
-│  3:30 PM  Member C: "done" → Part 3 complete ✅                 │
-│  4:00 PM  Member B: "done" → Part 2 complete ✅                 │
-│  4:30 PM  Member D: "done" → Part 4 complete ✅                 │
+│  ...   (Members work at their own pace — hours, days, weeks)    │
 │                                                                  │
-│  4:35  Team Lead: "merge" → AI verifies all 4 parts ✅          │
+│  ✅    Member A: "done" → Part 1 complete                       │
+│  ✅    Member C: "done" → Part 3 complete                       │
+│  ✅    Member B: "done" → Part 2 complete                       │
+│  ✅    Member D: "done" → Part 4 complete                       │
+│                                                                  │
+│  FINAL Team Lead: "merge" → AI verifies all 4 parts ✅          │
 │        AI combines everything into final project                 │
+│        Final push. Project ready! 🎉                             │
 │                                                                  │
-│  4:45  Final push. Project ready for demo. 🎉                   │
-│                                                                  │
-│  📜 Activity log = full project timeline for judges             │
+│  📜 Activity log = full project timeline                        │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -354,6 +386,13 @@ Click **"Fork"** on GitHub → clone your fork → run setup → push.
 <summary><b>What AI agents work with this?</b></summary>
 
 Any AI agent that reads `.gemini/rules/` files — primarily **Google Antigravity**. But since the rules are written in plain markdown, any AI coding assistant can follow them if you point it to the rules files.
+
+</details>
+
+<details>
+<summary><b>Is this only for hackathons?</b></summary>
+
+**No!** SETUP_Detox works for any team collaboration — hackathons, college group projects, coding competitions, startup challenges, open source projects, internal team sprints, or any scenario where multiple people build something together.
 
 </details>
 
@@ -416,6 +455,13 @@ Absolutely! Edit `.gemini/rules/hackathon-workflow.md` to change how the AI beha
 
 </details>
 
+<details>
+<summary><b>How does this help me prove my contribution?</b></summary>
+
+The activity log records every action with your name, timestamp, and the exact prompt you gave. Perfect for professors grading group projects, judges evaluating competition entries, or managers reviewing sprint contributions.
+
+</details>
+
 ---
 
 ## 🌟 Show Your Support
@@ -432,7 +478,7 @@ If SETUP_Detox helped your team, give it a ⭐ on GitHub!
 
 ## 🤝 Contributing
 
-Want to make SETUP_Detox better? 
+Want to make SETUP_Detox better?
 
 1. Fork the repo
 2. Create your feature branch: `git checkout -b feature/amazing-feature`
@@ -456,7 +502,7 @@ MIT — use it, fork it, build with it. Free forever.
 ---
 
 <p align="center">
-  <b>Built for hackers, by hackers. 🚀</b><br/>
-  <sub>Stop wasting time on setup. Start building what matters.</sub><br/><br/>
+  <b>Built for teams who ship. 🚀</b><br/>
+  <sub>Hackathons · Group Projects · Competitions · Open Source — one setup for all.</sub><br/><br/>
   <a href="https://github.com/Anshulpj12/SETUP_Detox">⭐ Star</a> · <a href="IMPORT_GUIDE.md">📥 Import Guide</a> · <a href="https://github.com/Anshulpj12/SETUP_Detox/issues">🐛 Report Bug</a> · <a href="https://github.com/Anshulpj12/SETUP_Detox/issues">💡 Request Feature</a>
 </p>

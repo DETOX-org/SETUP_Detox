@@ -1,7 +1,8 @@
-# 🚀 SETUP_Detox — Hackathon Team Collaboration Rules
+# 🚀 SETUP_Detox — AI-Powered Team Collaboration Rules
 
 > These rules are MANDATORY for any AI agent operating inside this workspace.
 > They govern how work is distributed, tracked, merged, and logged across a team.
+> Works for: Hackathons | Team Projects | Competitions | Open Source Collabs
 
 ---
 

@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # ============================================================
-# SETUP_Detox — One-Command Hackathon Project Setup (Linux/Mac)
+# SETUP_Detox — One-Command Team Project Setup (Linux/Mac)
 # ============================================================
-# Usage: bash setup.sh [--name "MyHackathon"] [--remote "https://github.com/..."]
+# Works for: Hackathons | Team Projects | Competitions | Collabs
+# Usage: bash setup.sh [--name "MyProject"] [--remote "https://github.com/..."]
 # ============================================================
 
 set -e
@@ -24,13 +25,13 @@ done
 
 echo ""
 echo "========================================"
-echo "  🚀 SETUP_Detox — Hackathon Setup"
+echo "  🚀 SETUP_Detox — Team Project Setup"
 echo "========================================"
 echo ""
 
 # --- Step 1: Project Name ---
 if [ -z "$PROJECT_NAME" ]; then
-    read -p "📋 Enter your project/hackathon name: " PROJECT_NAME
+    read -p "📋 Enter your project name (hackathon, team project, competition, etc.): " PROJECT_NAME
 fi
 echo "✅ Project: $PROJECT_NAME"
 

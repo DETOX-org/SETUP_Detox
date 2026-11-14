@@ -1,6 +1,6 @@
 # 📥 SETUP_Detox — Import & Usage Guide
 
-> **For anyone who wants to use SETUP_Detox in their hackathon or group project.**
+> **For anyone who wants to use SETUP_Detox in their hackathon, team project, competition, or any collaborative development.**
 
 ---
 
@@ -10,7 +10,7 @@
 
 1. Go to **[github.com/Anshulpj12/SETUP_Detox](https://github.com/Anshulpj12/SETUP_Detox)**
 2. Click the green **"Use this template"** button → **"Create a new repository"**
-3. Name your repo (e.g., `my-hackathon-2026`)
+3. Name your repo (e.g., `my-team-project`)
 4. Clone your new repo:
    ```bash
    git clone https://github.com/YOUR_USERNAME/my-hackathon-2026.git
@@ -49,18 +49,18 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/Anshulpj12/SETUP_Detox.git my-hackathon
-cd my-hackathon
+git clone https://github.com/Anshulpj12/SETUP_Detox.git my-project
+cd my-project
 
 # Remove original remote and add your own
 git remote remove origin
-git remote add origin https://github.com/YOUR_TEAM/your-hackathon-repo.git
+git remote add origin https://github.com/YOUR_TEAM/your-project-repo.git
 
 # Run setup
 # Windows:
-.\setup.ps1 -ProjectName "My Hackathon" 
+.\setup.ps1 -ProjectName "My Project" 
 # Linux/Mac:
-bash setup.sh --name "My Hackathon"
+bash setup.sh --name "My Project"
 
 # Push to your team's repo
 git add -A
@@ -232,11 +232,11 @@ A: Yes! `status` shows all parts. `log` shows every action by every member.
 
 ---
 
-## 🏆 Pro Tips for Hackathons
+## 🏆 Pro Tips for Teams
 
-1. **Detailed PLAN.md = Better splits** — spend 10 min on the plan
-2. **Claim early** — tell your team to claim parts within the first 15 minutes
-3. **Push often** — keep `registry.json` synced
-4. **Use `check` before long breaks** — stay in sync
-5. **The activity log is your project timeline** — judges love seeing this
+1. **Detailed PLAN.md = Better splits** — spend 10 min on the plan, it pays off
+2. **Claim early** — tell your team to claim parts as soon as the split is done
+3. **Push often** — keep `registry.json` synced so everyone sees live progress
+4. **Use `check` before long breaks** — stay in sync with your team
+5. **The activity log is your project timeline** — judges, professors, and managers love seeing this
 6. **Star the SETUP_Detox repo** ⭐ — support the project!
